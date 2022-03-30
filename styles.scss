@@ -1,35 +1,78 @@
 @import "colors.scss";
+@import "fonts.scss";
 body{margin: 0px;}
+// created grid layout for the page
 .grid_container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 80vh 100vh 100vh 100vh 100vh 100vh;
-    gap:1px;
+    grid-template-rows: 100vh 80vh 80vh 100vh 100vh 60vh 45vh;
+    
 
-    .grid{background-color: $red;}
+
 .img_container{width:100%;
     height: 100%;}
     }
+
 //styling first row
     .item1{background-image: url(images/desktop/image-header.jpg);
             background-size: cover;}
 
 // styling the second row
-    .item2{display: grid;
-            grid-template-columns: 50% 50%;
-        .sub_item1{background-color: rgb(255, 255, 255);
-            padding: 150px;
-        
-        h{
-        font-size: 39px;
-        font-family: 'Fraunces', serif;}
-        }
-        .text_container{background-color: brown;}
+.item2{display: grid;
+        grid-template-columns: 50% 50%;
+    .sub_item1{background-color: rgb(255, 255, 255);
+        padding: 150px;
+    
+    h{
+    font-size: $headingsize;
+    font-family: $headingfont;}
+    }
+    p{padding-top:30px;
+    font-size: $parsize;}
+    .text_container{background-color: brown;}
     
 }
 //styling the third row
 .item3{display: grid;
     grid-template-columns: 50% 50%;
+
     .sub_item1{background-color: rgb(255, 255, 255);
-        padding: 150px;}
+        padding: 120px;
+        h{font-size: $headingsize;
+            font-family: $headingfont;
+        ;}
+        p{padding-top:30px;
+        font-size: $parsize;}
     }
+    }
+//styling the fourth row
+.item4{display: grid;
+    grid-template-columns: 50% 50%;
+    .sub_item1{
+        background-image: url("images/desktop/image-graphic-design.jpg");
+        background-size: cover;
+        padding: 400px 100px 0px 100px;
+        h{font-size: $headingsize2;
+        font-family: $headingfont;
+        text-align: center;}
+    }
+    .sub_item2{
+        background-image: url("images/desktop/image-photography.jpg");
+        background-size: cover;
+        padding: 400px 150px 0px 150px;
+        h{font-size: $headingsize2;
+        font-family: $headingfont;
+        text-align: center;}
+    }
+    }
+// styling the sixth row
+.item6{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+//styling the last row
+.item7{background-color: $mygreen;
+position: relative;
+    h{font-size: $headingsize;
+    color: $mygreen2;
+    font-family: $headingfont2;}}
