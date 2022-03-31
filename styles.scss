@@ -7,44 +7,93 @@ body{margin: 0px;}
     grid-template-columns: 100%;
     grid-template-rows: 100vh 80vh 80vh 100vh 100vh 60vh 45vh;
     
+ h{font-size: $headingsize;
+    font-weight: 800;
+    font-family: $headingfont;}
 
-
+p{padding-top:30px;
+        font-size: $parsize;
+        font-family: $headingfont2;
+        color: $mygrey;
+        font-size: $parsize;
+        }
 .img_container{width:100%;
     height: 100%;}
     }
 
 //styling first row
     .item1{background-image: url(images/desktop/image-header.jpg);
-            background-size: cover;}
+            background-size: cover;
+        .navbar_container{display:flex;
+            width:100%;
+            height: 5%;
+            margin: 10px 0px;
+            //background-color: antiquewhite;
+
+            .sub_container1{display: flex;
+            justify-content: left;
+            color:$mywhite;
+            margin: 0px 30px;
+            font-family: $headingfont2;
+            font-weight: 600px;
+            font-size: $headingsize2;
+            width:60%;}
+
+            .sub_container2{display: flex;
+            text-align: center;
+            width:40%;
+                a{padding:10px 30px 0px 30px;
+                font-family: $headingfont2;
+                text-decoration: none;
+                color:$mywhite;}
+                .item_4{background-color: white;
+                    font-size: $headingfont2;
+                    font-family: $headingfont;
+                    font-weight: 600;
+                    color:$myblack;
+                    border-radius: 30%;}
+            }
+        }
+        .container{position: absolute;
+            top:30%;
+            left:24%;
+            font-size: 50px;
+            letter-spacing:$spacing;
+            text-align: center;
+            color: $mywhite;
+            font-weight: 600;
+            font-family: $headingfont;}
+    }
 
 // styling the second row
 .item2{display: grid;
         grid-template-columns: 50% 50%;
     .sub_item1{background-color: rgb(255, 255, 255);
         padding: 150px;
+        overflow: hidden;
+        background-color: $mywhitebg;
     
-    h{
-    font-size: $headingsize;
-    font-family: $headingfont;}
+   
     }
-    p{padding-top:30px;
-    font-size: $parsize;}
-    .text_container{background-color: brown;}
+    p::after{position: absolute;
+    background-color: rgb(139, 84, 11);
+    z-index: -1;
+    height: 100%;
+    width: 100%;}
+    //.text_container{background-color: brown;}
     
+
 }
 //styling the third row
 .item3{display: grid;
     grid-template-columns: 50% 50%;
 
     .sub_item1{background-color: rgb(255, 255, 255);
+        background-color: $mywhitebg;
         padding: 120px;
-        h{font-size: $headingsize;
-            font-family: $headingfont;
-        ;}
-        p{padding-top:30px;
-        font-size: $parsize;}
     }
     }
+
 //styling the fourth row
 .item4{display: grid;
     grid-template-columns: 50% 50%;
@@ -52,17 +101,17 @@ body{margin: 0px;}
         background-image: url("images/desktop/image-graphic-design.jpg");
         background-size: cover;
         padding: 400px 100px 0px 100px;
-        h{font-size: $headingsize2;
-        font-family: $headingfont;
-        text-align: center;}
+        h{color:$mygreen3;}
+        p{color: $mygreen3;
+        font-family: $headingfont2;}
     }
     .sub_item2{
         background-image: url("images/desktop/image-photography.jpg");
         background-size: cover;
         padding: 400px 150px 0px 150px;
-        h{font-size: $headingsize2;
-        font-family: $headingfont;
-        text-align: center;}
+        color: $myblue;
+        background-color: $mybluebg;
+        p{color:$myblue ;}
     }
     }
 // styling the sixth row
@@ -75,4 +124,4 @@ body{margin: 0px;}
 position: relative;
     h{font-size: $headingsize;
     color: $mygreen2;
-    font-family: $headingfont2;}}
+    font-family: $headingfont2; } }
